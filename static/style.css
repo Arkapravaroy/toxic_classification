@@ -1,14 +1,14 @@
 @charset "UTF-8";
-html, body { background-color: #49a7c7; height: 100%; padding: 0; margin: 0; }
+html, body { background-color: #252902; height: 100%; padding: 0; margin: 0; }
 #div1 {
-    background: #4d648d ;
+    background: #FCFCFB ;
     width: 100%;
     height: 10%;
     float: left;
 }
 
 #div2 {
-    background: #49a7c7;
+    background: #252902;
     width: 100%;
     height: 25%;
     float: left;
@@ -16,25 +16,25 @@ html, body { background-color: #49a7c7; height: 100%; padding: 0; margin: 0; }
 }
 
 #div3 {
-  background-color: #49a7c7;
+  background-color: #252902;
   width: 100%;
   height: 25%;
   float: left;
 }
 
-#div4 { background: #a4d3e3;
+#div4 { background: #4f5421;
     box-sizing: border-box;
     width: 100%;
     height: 40%;
     float: left;
 }
 
-#home_icon {
+/* #home_icon {
     position: relative;
     height: 100%;
     width: 20%;
     float: left;
-}
+} */
 
 #title_text {
     position: relative;
@@ -43,12 +43,12 @@ html, body { background-color: #49a7c7; height: 100%; padding: 0; margin: 0; }
     float: left;
 }
 
-#youtube_icon {
+/* #youtube_icon {
     position: relative;
     height: 100%;
     width: 20%;
     float: left;
-}
+} */
 
 #div4 p {
     font-family: Verdana, monospace;
@@ -68,7 +68,7 @@ html, body { background-color: #49a7c7; height: 100%; padding: 0; margin: 0; }
     margin-top: 12px;
 }
 
-.logo {
+/* .logo {
   display: block;
   text-indent: -9999px;
   width: 100px;
@@ -76,9 +76,9 @@ html, body { background-color: #49a7c7; height: 100%; padding: 0; margin: 0; }
   background: url(home-roof.svg);
   background-size: 100px 82px;
     float: left;
-}
+} */
 
-.logo_you {
+/* .logo_you {
   display: block;
   text-indent: -9999px;
   width: 100px;
@@ -87,7 +87,7 @@ html, body { background-color: #49a7c7; height: 100%; padding: 0; margin: 0; }
   background-size: 100px 82px;
     margin-right: 0;
     float: right;
-}
+} */
 
 @font-face {
     font-family: Aileron;
@@ -114,7 +114,7 @@ li {
 
 li a {
   text-decoration: none;
-  color: #1e3459;
+  color: #ffffff;
   transition: font-size 0.3s ease, background-color 0.3s ease;
   display: inline-block;
   width: 200px;
@@ -186,12 +186,12 @@ label {
 .active label {
   top: 0px;
   font-size: 0.8em;
-  color: #1e3459;
+  color: #ffffff;
   transition: all 0.5s ease 0.6s;
 }
 
 .active + svg {
-  stroke: #1e3459;
+  stroke: #ffffff;
   transition: stroke 0.4s ease 0.6s;
 }
 
@@ -245,7 +245,7 @@ button {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-    background-color: #1e3459;
+    background-color: #f6f7d5;
     border: none;
     line-height: 60px;
     width: 200px;
