@@ -161,7 +161,7 @@ input {
 
 .active input {
   opacity: 1;
-  transition: all 0.5s ease 0.5s;
+/*   transition: all 0.5s ease 0.5s; */
 }
 
 /* svg {
@@ -242,7 +242,7 @@ label {
 button {
 	position: absolute;
     top: 50%;
-    left: 50%;
+    left: 85%;
     -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
     background-color: #525252;
@@ -690,7 +690,7 @@ button.percent-100:after {
           transform: rotate(405deg);
 }
 button.finished {
-  background-color: #1e3459;
+  background-color: #525252;
   width: 200px;
   border-radius: 10px;
   color: #fff;
