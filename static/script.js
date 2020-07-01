@@ -51,7 +51,7 @@ btn.onclick = function() {
 				btn.innerText = i++;
 				btn.classList.remove('percent-' + (i - 1));
 				btn.classList.add('percent-' + i);
-				if (i === 100) {
+				if (i === 0) {
 						btn.classList.remove("loading");
 						btn.classList.add("finished");
 						btn.innerText = '';
