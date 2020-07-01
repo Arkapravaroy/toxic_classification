@@ -35,8 +35,8 @@ def predict(text):
 #     else:
     list_classes = ['toxic', 'severe_toxic', 'obscene', 'threat', 'insult', 'identity_hate']
 #     predictions = {list_classes[idx]: y_test[idx] for idx in len(list_classes)}
-    predictions = [list_classes[idx] for idx in y_test[1]]
-    scores=y_test[2]
+#     predictions = [list_classes[idx] for idx in y_test[1]]
+    predictions=y_test
 
     K.clear_session()
-    return predictions,scores
+    return predictions
