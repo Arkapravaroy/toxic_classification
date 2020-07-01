@@ -28,7 +28,7 @@ def predict(text):
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
     y_test = model.predict([x_test], verbose=1)
-    y_test=np.asarray(y_test)
+    
 
 #     if len(np.nonzero(y_test > 0.5)[0]) == 0:
 #         predictions = ['Non-Toxic']
@@ -36,7 +36,7 @@ def predict(text):
     list_classes = ['toxic', 'severe_toxic', 'obscene', 'threat', 'insult', 'identity_hate']
 #     predictions = {list_classes[idx]: y_test[idx] for idx in len(list_classes)}
 #     predictions = [list_classes[idx] for idx in y_test[1]]
-    predictions=y_test
+    predictions = [i for i in y_test[0]]
 
     K.clear_session()
     return predictions
