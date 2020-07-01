@@ -22,7 +22,7 @@ html, body { background-color: #000000; height: 100%; padding: 0; margin: 0; }
   float: left;
 }
 
-#div4 { background: #333332;
+#div4 { background: #000000;
     box-sizing: border-box;
     width: 100%;
     height: 60%;
@@ -55,7 +55,7 @@ html, body { background-color: #000000; height: 100%; padding: 0; margin: 0; }
     text-align: center;
     color: #fff;
     font-size: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     padding-top: 20px;
     padding-right: 80px;
 }
