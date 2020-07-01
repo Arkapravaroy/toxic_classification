@@ -6,12 +6,7 @@
         <p>{{ text_to_classify }}</p>
         <ul>
             {% for label in pred %}
-                <li><a href="#">{{ label.upper() }}</a></li>
-            {% endfor %}
-        </ul>
-        <ul>
-            {% for float in scores %}
-                <li><a href="#">{{ float }}</a></li>
+                <li><a href="#">{{ label }}</a></li>
             {% endfor %}
         </ul>
     </div>
