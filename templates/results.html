@@ -7,6 +7,7 @@
         <ul>
             {% for label in pred %}
                 <li><a href="#">{{ label.upper() }}</a></li>
+                <li><a href="#">{{ pred[label] }}</a></li>
             {% endfor %}
         </ul>
     </div>
