@@ -13,7 +13,7 @@ def index():
 @app.route('/results/<data>')
 def results(data):
     text_to_classify = data
-    pred , scores= predict(text_to_classify)
+    pred = predict(text_to_classify)
     return render_template('results.html', pred=pred, text_to_classify=text_to_classify)
 
 
