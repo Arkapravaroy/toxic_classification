@@ -9,6 +9,11 @@
                 <li><a href="#">{{ label.upper() }}</a></li>
             {% endfor %}
         </ul>
+        <ul>
+            {% for float in scores %}
+                <li><a href="#">{{ float }}</a></li>
+            {% endfor %}
+        </ul>
     </div>
 
 {% endblock %}
