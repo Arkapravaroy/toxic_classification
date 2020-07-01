@@ -48,8 +48,8 @@ btn.onclick = function() {
 		this.classList.add("loading");
 
 		var inter = setInterval(function() {
-				btn.innerText = i++;
-				btn.classList.remove('percent-' + (i - 1));
+// 				btn.innerText = i++;
+// 				btn.classList.remove('percent-' + (i - 1));
 				btn.classList.add('percent-' + i);
 				if (i === 0) {
 						btn.classList.remove("loading");
