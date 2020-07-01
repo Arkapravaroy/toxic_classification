@@ -35,6 +35,10 @@ def predict(text):
 #     else:
     list_classes = ['toxic', 'severe_toxic', 'obscene', 'threat', 'insult', 'identity_hate']
 #         predictions = [list_classes[idx] for idx in np.nonzero(y_test > 0.5)[1]]
-    predictions=[list(x) for x in zip(list_classes, scores)]
+    predictions=[]
+    for i in range(len(scores)):
+        element= list_classes[i]+':'+str(scores[i])
+        predictions.append(element)
+#         =[list(x) for x in zip(list_classes, scores)]
     K.clear_session()
     return predictions
