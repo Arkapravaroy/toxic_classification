@@ -289,7 +289,7 @@ button.loading {
 button.loading:after {
   opacity: 1;
 }
-button.percent-1:after {
+/* button.percent-1:after {
   -webkit-transform: rotate(48.6deg);
           transform: rotate(48.6deg);
 }
@@ -688,7 +688,7 @@ button.percent-99:after {
 button.percent-100:after {
   -webkit-transform: rotate(405deg);
           transform: rotate(405deg);
-}
+} */
 button.finished {
   background-color: #525252;
   width: 200px;
