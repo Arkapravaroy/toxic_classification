@@ -29,11 +29,12 @@ def predict(text):
 
     y_test = model.predict([x_test], verbose=1)
 
-    if len(np.nonzero(y_test > 0.5)[0]) == 0:
-        predictions = ['Non-Toxic']
-    else:
-        list_classes = ['toxic', 'severe_toxic', 'obscene', 'threat', 'insult', 'identity_hate']
-        predictions = [list_classes[idx] for idx in np.nonzero(y_test > 0.5)[1]]
+#     if len(np.nonzero(y_test > 0.5)[0]) == 0:
+#         predictions = ['Non-Toxic']
+#     else:
+    list_classes = ['toxic', 'severe_toxic', 'obscene', 'threat', 'insult', 'identity_hate']
+    predictions = {list_classes[idx]: y_test[idx] for idx in len(list_classes)}
+#         predictions = [list_classes[idx] for idx in np.nonzero(y_test > 0.5)[1]]
 
     K.clear_session()
     return predictions
