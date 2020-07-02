@@ -41,4 +41,4 @@ def predict(text):
         predictions.append(element)
 #         =[list(x) for x in zip(list_classes, scores)]
     K.clear_session()
-    return predictions,scores,list_classes
+    return predictions
