@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from classifier import predict
+import matplotlib as plt
 
 
 app = Flask(__name__)
