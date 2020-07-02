@@ -28,7 +28,7 @@ def results(data):
     plt.xlabel("categories")
     plt.ylabel("Toxicity")
     plt.title("Toxicity measurements")
-    fig.savefig('my_plot.png')
+#     fig.savefig('my_plot.png')
     return render_template('results.html', pred=pred, text_to_classify=text_to_classify)
 
 
