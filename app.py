@@ -20,7 +20,7 @@ def results(data):
 #     langs = ['C', 'C++', 'Java', 'Python', 'PHP']
 #     students = [23,17,35,29,12]
     ax.bar(classes,scores)
-    fig.savefig('image.jpg')
+    fig.savefig('image.png')
     
 #     plt.show()
 
