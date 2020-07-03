@@ -22,8 +22,8 @@ def results(data):
     ax.bar(classes,scores)
     ax.tick_params(axis='x', colors='white')
     ax.tick_params(axis='x', colors='white')
-    img_name="image.png"
-    fig.savefig('static/' + img_name)
+    img_name="image"+ str(time.time())+".png"
+    fig.savefig('static/' +img_name)
     
 #     plt.show()
 
