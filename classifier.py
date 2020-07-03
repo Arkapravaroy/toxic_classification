@@ -29,7 +29,7 @@ def predict(text):
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
     y_test = model.predict([x_test], verbose=1)
-    scores = [i for i in y_test[0]]
+    scores = [round(i, 3) for i in y_test[0]]
 
 #     if len(np.nonzero(y_test > 0.5)[0]) == 0:
 #         predictions = ['Non-Toxic']
