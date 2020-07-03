@@ -20,8 +20,8 @@ def results(data):
 #     langs = ['C', 'C++', 'Java', 'Python', 'PHP']
 #     students = [23,17,35,29,12]
     ax.bar(classes,scores)
-    ax.xaxis.label.set_color('white')
-    ax.yaxis.label.set_color('white')
+    ax.get_xticklabels().set_color("white")
+    ax.get_yticklabels().set_color("white")
     img_name="image.png"
     fig.savefig('static/' + img_name)
     
