@@ -4,6 +4,7 @@ import numpy as np
 from keras import backend as K
 from keras.models import model_from_json
 from keras.preprocessing.sequence import pad_sequences
+import matplotlib.pyplot as plt 
 
 
 max_features, max_len = 20000, 100
@@ -40,5 +41,14 @@ def predict(text):
         element= list_classes[i]+':'+str(scores[i])
         predictions.append(element)
 #         =[list(x) for x in zip(list_classes, scores)]
+        fig = plt.figure()
+    ax = fig.add_axes([0,0,1,1])
+#     langs = ['C', 'C++', 'Java', 'Python', 'PHP']
+#     students = [23,17,35,29,12]
+    ax.bar(classes,scores)
+    # plt.show()
+    os.remove("templates\image2.png")
+    #Now save the new image file
+    fig.savefig("templates\image2.png")
     K.clear_session()
     return predictions,scores,list_classes
