@@ -28,6 +28,12 @@ html, body { background-color: #000000; height: 100%; padding: 0; margin: 0; }
     height: 40%;
     float: left;
 }
+#div4 { background: #000000;
+    box-sizing: border-box;
+    width: 40%;
+    height: 40%;
+    float: right;
+}
 
 /* #home_icon {
     position: relative;
