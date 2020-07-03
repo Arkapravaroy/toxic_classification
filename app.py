@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from classifier import predict
 import matplotlib.pyplot as plt
+import time
 
 
 app = Flask(__name__)
