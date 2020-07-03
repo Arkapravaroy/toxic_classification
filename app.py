@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from classifier import predict
+import matplotlib.pyplot as plt
 
 
 app = Flask(__name__)
@@ -14,9 +15,16 @@ def index():
 def results(data):
     text_to_classify = data
     pred,scores,classes = predict(text_to_classify)
+    fig = plt.figure()
+    ax = fig.add_axes([0,0,1,1])
+    langs = ['C', 'C++', 'Java', 'Python', 'PHP']
+    students = [23,17,35,29,12]
+    ax.bar(langs,students)
+    
+#     plt.show()
 
     
-    return render_template('results.html', pred=pred, text_to_classify=text_to_classify)
+    return render_template('results.html', pred=pred, text_to_classify=text_to_classify, user_image=fig)
 
 
 
