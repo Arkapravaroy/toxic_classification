@@ -1,6 +1,5 @@
 from flask import Flask, render_template
 from classifier import predict
-import os
 
 
 app = Flask(__name__)
@@ -16,7 +15,6 @@ def results(data):
     text_to_classify = data
     pred,scores,classes = predict(text_to_classify)
 
-#     fig.savefig('image2.png')
     
     return render_template('results.html', pred=pred, text_to_classify=text_to_classify)
 
