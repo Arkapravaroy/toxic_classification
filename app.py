@@ -20,12 +20,13 @@ def results(data):
 #     langs = ['C', 'C++', 'Java', 'Python', 'PHP']
 #     students = [23,17,35,29,12]
     ax.bar(classes,scores)
-    fig.savefig('image.png')
+    img_name="image.png"
+    fig.savefig('static/' + img_name)
     
 #     plt.show()
 
     
-    return render_template('results.html', pred=pred, text_to_classify=text_to_classify, user_image=fig)
+    return render_template('results.html', pred=pred, text_to_classify=text_to_classify, graph=img_name)
 
 
 
