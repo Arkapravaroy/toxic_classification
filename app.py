@@ -21,8 +21,9 @@ def results(data):
 #     students = [23,17,35,29,12]
     ax.bar(classes,scores)
     # plt.show()
-    variable=fig.savefig('image2.png')
-    return render_template('results.html', pred=pred, text_to_classify=text_to_classify, user_image=variable)
+    fig.savefig('image2.png')
+    return render_template('results.html', pred=pred, text_to_classify=text_to_classify)
+
 
 
 if __name__ == '__main__':
