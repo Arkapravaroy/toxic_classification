@@ -22,9 +22,9 @@ def results(data):
 #     students = [23,17,35,29,12]
     ax.bar(classes,scores)
     # plt.show()
-    os.remove("static\image2.png")
+    os.remove("templates\image2.png")
     #Now save the new image file
-    fig.savefig("static\image2.png")
+    fig.savefig("templates\image2.png")
 #     fig.savefig('image2.png')
     
     return render_template('results.html', pred=pred, text_to_classify=text_to_classify)
