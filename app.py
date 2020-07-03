@@ -22,7 +22,7 @@ def results(data):
     ax.bar(classes,scores)
     # plt.show()
     variable=fig.savefig('image2.png')
-    return render_template('results.html', pred=pred, text_to_classify=text_to_classify)
+    return render_template('results.html', pred=pred, text_to_classify=text_to_classify, user_image=variable)
 
 
 if __name__ == '__main__':
