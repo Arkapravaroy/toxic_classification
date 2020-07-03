@@ -9,8 +9,6 @@
                 <li><a href="#">{{ label }}</a></li>
             {% endfor %}
         </ul>
-        <p>
-        <img src="{{ user_image }}" />
-        </p>
+        <img src="{{ url_for('static', filename=graph) }}" />
     </div>
 {% endblock %}
