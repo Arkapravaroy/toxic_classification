@@ -21,7 +21,7 @@ def results(data):
 #     langs = ['C', 'C++', 'Java', 'Python', 'PHP']
 #     students = [23,17,35,29,12]
     ax.bar(classes,scores)
-    ax.set_facecolor('black')
+#     ax.set_facecolor('black')
     ax.patch.set_facecolor('white')
     ax.tick_params(axis='x', colors='black')
     ax.tick_params(axis='y', colors='black')
