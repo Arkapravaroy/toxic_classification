@@ -23,8 +23,8 @@ def results(data):
     ax.bar(classes,scores)
     ax.set_facecolor('black')
     ax.patch.set_facecolor('white')
-    ax.tick_params(axis='x', colors='white')
-    ax.tick_params(axis='y', colors='white')
+    ax.tick_params(axis='x', colors='black')
+    ax.tick_params(axis='y', colors='black')
     img_name="image"+ str(time.time())+".png"
     fig.savefig('static/' +img_name,bbox_inches='tight',pad_inches=0.5)
     
