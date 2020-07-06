@@ -25,8 +25,8 @@ def results(data):
     ax.patch.set_facecolor('white')
     ax.tick_params(axis='x', colors='white')
     ax.tick_params(axis='y', colors='white')
-    img_name="image"+ str(time.time())+".pdf"
-    fig.savefig('static/' +img_name)
+    img_name="image"+ str(time.time())+".png"
+    fig.savefig('static/' +img_name,bbox_inches='tight',pad_inches=0.5)
     
 #     plt.show()
 
