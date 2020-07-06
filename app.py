@@ -22,6 +22,7 @@ def results(data):
 #     students = [23,17,35,29,12]
     ax.bar(classes,scores)
     ax.set_facecolor('black')
+    fig.patch.set_facecolor('white')
     ax.tick_params(axis='x', colors='white')
     ax.tick_params(axis='x', colors='white')
     img_name="image"+ str(time.time())+".png"
