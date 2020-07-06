@@ -9,8 +9,7 @@
                 <li><a href="#">{{ label }}</a></li>
             {% endfor %}
         </ul>
-    </div>
-    <div id="div5" style="color:#666564;padding-left:60%;padding-right:40%;">
+            <div id="div5">
         <style>
         img {
 /*           background:#666564; */
@@ -21,11 +20,15 @@
           padding-left:40%; 
           padding-right:60%; 
           padding-bottom:100%;
+          width:100%;
+          min-height:10%;
           float: right;
         }
         </style>
         <img src="{{ url_for('static', filename=graph) }}" />
     </div>
+    </div>
+
     
     
 {% endblock %}
