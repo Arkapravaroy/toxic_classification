@@ -3,7 +3,7 @@
 {% block content %}
 
     <div id="div4">
-        <p>'Entered statement:'+{{ text_to_classify }}</p>
+        <p>Entered statement:+{{ text_to_classify }}</p>
         </ul>
         <style>
          img {
@@ -20,7 +20,9 @@
 /*           allign: top; */
         }
         </style>
+        <a href="{{ url_for('static', filename=graph) }}" download>
         <img src="{{ url_for('static', filename=graph) }}" />
+        </a>
         <ul>
             {% for label in pred %}
                 <li><a href="#">{{ label }}</a></li>
