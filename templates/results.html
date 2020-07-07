@@ -11,22 +11,20 @@
           display: block;
           position: relative;
 /*        padding-left:50%;  */
-          padding-bottom:10%;  
+          padding-bottom:30%;  
 /*           bottom:300px; */
 /*           width:60%; */
-          height:180%;
+          height:120%;
           float: right;
 /*           allign: top; */
         }
         </style>
         <img src="{{ url_for('static', filename=graph) }}" />
-        </ul>
         <ul>
             {% for label in pred %}
                 <li><a href="#">{{ label }}</a></li>
             {% endfor %}
-<!--         <div id="div5"> -->
-<!--     </div> -->
+        </ul>
     </div>
      
     
