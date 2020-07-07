@@ -10,7 +10,7 @@ html, body { background-color: #000000; height: 100%; padding: 0; margin: 0; }
 #div2 {
     background: #333332;
     width: 100%;
-    height: 10%;
+    height: 40%;
     float: left;
     font-family: 'Roboto Mono', monospace;
 }
