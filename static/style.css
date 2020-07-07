@@ -52,7 +52,7 @@ html, body { background-color: #000000; height: 100%; padding: 0; margin: 0; }
 
 #div4 p {
     font-family: Verdana, monospace;
-    text-align: left;
+    text-align: center;
     color: #fff;
     font-size: 30px;
     padding-bottom: 60px;
