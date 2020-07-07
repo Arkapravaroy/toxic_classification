@@ -26,7 +26,7 @@ html, body { background-color: #000000; height: 100%; padding: 0; margin: 0; }
     box-sizing: border-box;
     width: 100%;
     height: 20%;
-    float: center;
+    float: left;
 }
 
 /* #home_icon {
@@ -105,7 +105,7 @@ ul {
 }
 
 li {
-    text-align: center;
+    text-align: left;
     padding-bottom: 30px;
     font-family: "Da Streets", monospace;
     font-size: 25px;
