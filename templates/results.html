@@ -25,9 +25,10 @@
         </a>
         <ul>
             {% for label in pred %}
-<!--                <a href="#">{{ label }} download> -->
-                <li><a href="#">{{ label }} download></a></li>
-<!--             </a> -->
+               <a href="#">{{url for (label) }} download>
+                     <li><a href="#">{{  label }} download></a></li> 
+<!--                 <li><a href="#">{{  label }} download></a></li> -->
+            </a>
             {% endfor %}
         
     </div>
