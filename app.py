@@ -23,7 +23,7 @@ def results(data):
 #     students = [23,17,35,29,12]
     ax.bar(classes,scores,color=(0.5,0.5,0.5,1))
     ax.set_ylim([0,1])
-    ax.ylim(0,1)
+#     ax.ylim(0,1)
 #     ax.set_facecolor('black')
 #     ax.patch.set_facecolor('white')
     
