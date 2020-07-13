@@ -40,7 +40,7 @@ html, body { background-color: #000000; height: 100%; padding: 0; margin: 0; }
     position: relative;
     height: 100%;
     width: 60%;
-    float: left;
+    float: center;
 }
 
 /* #youtube_icon {
@@ -67,6 +67,7 @@ html, body { background-color: #000000; height: 100%; padding: 0; margin: 0; }
     font-family: Aileron, monospace;
     text-align: center;
     margin-top: 12px;
+    margin-left:24px;
 }
 
 /* .logo {
