@@ -17,7 +17,7 @@ def results(data):
     text_to_classify = data
     pred,scores,classes = predict(text_to_classify)
     fig = plt.figure()
-    fig.ylim(0.1)
+#     fig.ylim(0.1)
     ax = fig.add_axes([0,0,1,1])
 #     langs = ['C', 'C++', 'Java', 'Python', 'PHP']
 #     students = [23,17,35,29,12]
