@@ -80,16 +80,16 @@ html, body { background-color: #000000; height: 100%; padding: 0; margin: 0; }
     float: left;
 } */
 
-/* .logo_you {
+.logo_you {
   display: block;
   text-indent: -9999px;
   width: 100px;
   height: 82px;
-  background: url(youtube.svg);
+/*   background: url(youtube.svg); */
   background-size: 100px 82px;
     margin-right: 0;
     float: right;
-} */
+}
 
 @font-face {
     font-family: Aileron;
