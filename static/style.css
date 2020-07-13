@@ -43,12 +43,12 @@ html, body { background-color: #000000; height: 100%; padding: 0; margin: 0; }
     float: center;
 }
 
-/* #youtube_icon {
+#youtube_icon {
     position: relative;
     height: 100%;
     width: 20%;
-    float: left;
-} */
+    float: right;
+}
 
 #div4 p {
     font-family: Verdana, monospace;
