@@ -5,8 +5,8 @@
     <div id="div4">
         <p>Entered statement: {{ text_to_classify }}</p>
         </ul>
-        <style>
-         img {
+<!--         <style> -->
+/*          img {
 /*           background:#666564; */
           color:#000000;
           display: block;
@@ -17,11 +17,11 @@
           width:50%; 
           height:270%;
           float: right;
-/*           allign: top; */
+/*           allign: top; */ */
         }
-        </style>
+<!--         </style> -->
         <a href="{{ url_for('static', filename=graph) }}" download>
-        <img src="{{ url_for('static', filename=graph) }}" />
+        <img src="{{ url_for('static', filename=graph) }}"  width="500" height="500" style="float:right"/>
         </a>
         <ul>
             {% for label in pred %}
