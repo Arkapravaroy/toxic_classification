@@ -161,6 +161,12 @@ input {
   font-family: 'Roboto Mono', monospace;
   transition: all 0.5s ease;
 }
+#refresh {
+  color: #ffffff;
+/*   border: 0px solid; */
+  height:20px;
+  width:25px;
+}	
 
 .active input {
   opacity: 1;
