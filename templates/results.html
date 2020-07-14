@@ -23,13 +23,13 @@
         
 <a  href="{{ url_for('static', filename=graph) }}" download>
         
-        <img src="{{ url_for('static', filename=graph) }}"  width="500" height="400" style=" float:right;  padding-inline-end: 20px "/><p style="color:white; text-allign:right;">click on the image to download </p></a>
+        <img src="{{ url_for('static', filename=graph) }}"  width="500" height="400" style=" float:right;  padding-inline-end: 20px "/><p style="color:white; font-size: 20px; padding-left:1000px; padding-right: 20px; float:right;">click on the image to download </p></a>
         
         <ul>
             {% for label in pred %}
                 <li><a href="#">{{  label }}</a></li>
             {% endfor %}
-        <button onClick="window.location.reload();">Refresh Page</button>
+        <button id="new" onClick="window.location.reload();">Refresh Page</button>
     </div>
    
 {% endblock %}
