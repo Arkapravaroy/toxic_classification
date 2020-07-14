@@ -23,9 +23,7 @@
         
         <a  href="{{ url_for('static', filename=graph) }}" download>
         
-        <img src="{{ url_for('static', filename=graph) }}"  width="500" height="400" style=" float:right;  padding-inline-end: 20px "/>
-         "click on the image to download" style="text-allign: right"
-        </a>
+        <img src="{{ url_for('static', filename=graph) }}"  width="500" height="400" style=" float:right;  padding-inline-end: 20px "/>click on the image to download</a>
         
         <ul>
             {% for label in pred %}
