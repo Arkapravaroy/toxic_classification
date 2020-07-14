@@ -29,7 +29,8 @@
             {% for label in pred %}
                 <li><a href="#">{{  label }}</a></li>
             {% endfor %}
-        <input  onclick="goBack()" style="color:white;">Reresh</input>
+         <div class="btn-group">  
+        <button  onclick="goBack()" style="color:white;">Reresh</button>
 
 
 
@@ -38,6 +39,7 @@ function goBack() {
   window.history.back();
 }
 </script>
+            </div>            
 
     </div>
    
