@@ -20,10 +20,12 @@
 /*           allign: top; */ */
         }
 <!--         </style> -->
+        <figure>
         <a href="{{ url_for('static', filename=graph) }}" download>
-        <img src="{{ url_for('static', filename=graph) }}"  width="500" height="400" style=" padding-inline-end:20px float:right"/>
+        <img src="{{ url_for('static', filename=graph) }}"  width="500" height="400" style=" float:right;  padding-inline-end: 20px "/>
             <figcaption>[To download the genrated diagram click on the above figure]</figcaption>
         </a>
+        </figure>
         <ul>
             {% for label in pred %}
                 <li><a href="#">{{  label }}</a></li>
