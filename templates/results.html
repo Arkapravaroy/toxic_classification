@@ -29,7 +29,7 @@
             {% for label in pred %}
                 <li><a href="#">{{  label }}</a></li>
             {% endfor %}
-        <button onClick="history.go(0);">Refresh Page</button>
+        <input type="button" value="Refresh Page" onClick="location.href=location.href">
     </div>
    
 {% endblock %}
