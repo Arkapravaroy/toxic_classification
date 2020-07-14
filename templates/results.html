@@ -21,7 +21,8 @@
         }
 <!--         </style> -->
         <a href="{{ url_for('static', filename=graph) }}" download>
-        <img src="{{ url_for('static', filename=graph) }}"  width="500" height="400" style="float:right"/>
+        <img src="{{ url_for('static', filename=graph) }}"  width="500" height="400" style=" padding-inline-end:20px float:right"/>
+            <figcaption>[To download the genrated diagram click on the above figure]</figcaption>
         </a>
         <ul>
             {% for label in pred %}
