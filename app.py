@@ -23,7 +23,7 @@ def results(data):
 #     ax.set_ylim([0,1])
 #     img_name="image"+ str(time.time())+".png"
 #     fig.savefig('static/' +img_name,bbox_inches='tight',pad_inches=0.5)
-    return render_template('results.html', pred=pred, text_to_classify=text_to_classify)
+    return render_template('results.html', pred=pred)
 
 
 if __name__ == '__main__':
