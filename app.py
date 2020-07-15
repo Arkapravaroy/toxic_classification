@@ -16,7 +16,7 @@ def index():
 
 def results(data):
     text_to_classify = data
-    text=text_to_classify
+#     text=text_to_classify
 #     if len(text_to_classif)!=0:
     pred,scores,classes = predict(text_to_classify)
 
@@ -60,7 +60,7 @@ def results(data):
 # #     plt.show()
 
 
-      return render_template('results.html', pred=pred, text_to_classify=text, graph=img_name)
+     return render_template('results.html', pred=pred, text_to_classify=text, graph=img_name)
 
     
 
