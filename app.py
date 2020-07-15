@@ -13,9 +13,10 @@ def index():
 
 
 @app.route('/results/<data>')
-def results(data):
-    text_to_classify = data
-    if len(text_to_classify) !=0:
+if len(text_to_classify) !=0:
+    def results(data):
+        text_to_classify = data
+
         pred,scores,classes = predict(text_to_classify)
         fig = plt.figure()
     #     fig.ylim(0.1)
@@ -37,8 +38,9 @@ def results(data):
 
 
         return render_template('results.html', pred=pred, text_to_classify=text_to_classify, graph=img_name)
-    else:
-        return render_template('index.html)
+ else:
+     render_template('index.html')
+    
 
 
 
