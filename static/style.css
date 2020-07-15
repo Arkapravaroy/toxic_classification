@@ -249,7 +249,7 @@ label {
   margin: auto;
 }
 
-button {
+.button {
 	position: absolute;
     top: 16%;
     left: 93%;
