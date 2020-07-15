@@ -15,8 +15,9 @@ def index():
 
 @app.route('/results/<data>')
 def results(data):
-    text_to_classify = data
-    if len(text_to_classify) !=0:
+    
+    try:
+        text_to_classify = data
         pred,scores,list_classes = predict(text_to_classify)
         fig = plt.figure()
         ax = fig.add_axes([0,0,1,1])
@@ -24,7 +25,8 @@ def results(data):
         ax.set_ylim([0,1])
         img_name="image"+ str(time.time())+".png"
         fig.savefig('static/'+img_name,bbox_inches='tight',pad_inches=0.5)
-    else:
+    except:
+        text_to_classify='error'
         pred=['error','error','error','error','error','error']
         list_classes=['toxic', 'severe_toxic', 'obscene', 'threat', 'insult', 'identity_hate']
         fig = plt.figure()
@@ -33,7 +35,7 @@ def results(data):
         ax.set_ylim([0,1])
         img_name="image"+ str(time.time())+".png"
         fig.savefig('static/'+img_name,bbox_inches='tight',pad_inches=0.5)
-    return render_template('results.html', pred=pred, graph=img_name)
+    return render_template('results.html', pred=pred, text_to_classify=text_to_classify,graph=img_name)
 
 
 if __name__ == '__main__':
