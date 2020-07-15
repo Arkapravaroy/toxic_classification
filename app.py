@@ -16,7 +16,7 @@ def index():
 @app.route('/results/<data>')
 def results(data):
     text_to_classify = data
-    pred = predict,scores,list_classes(text_to_classify)
+    pred,scores,list_classes = predict(text_to_classify)
     fig = plt.figure()
     ax = fig.add_axes([0,0,1,1])
     ax.bar(classes,scores,color=(0.5,0.5,0.5,1))
