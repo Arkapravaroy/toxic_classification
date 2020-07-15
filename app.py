@@ -36,7 +36,7 @@ def results(data):
 #         img_name="image"+ str(time.time())+".png"
 #         fig.savefig('static/'+img_name,bbox_inches='tight',pad_inches=0.5)
 #     return render_template('results.html', pred=pred, text_to_classify=text_to_classify,graph=img_name)
-    if text_to_classify != '':
+    if data != '':
         text_to_classify = data
         pred,scores,list_classes = predict(text_to_classify)
         fig = plt.figure()
@@ -47,7 +47,7 @@ def results(data):
         fig.savefig('static/'+img_name,bbox_inches='tight',pad_inches=0.5)
         return render_template('results.html', pred=pred, text_to_classify=text_to_classify,graph=img_name)        
     else:
-        print('Input string Empty!!')
+        return render_template('index.html')
 
 if __name__ == '__main__':
     app.run()
