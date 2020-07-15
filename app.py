@@ -60,7 +60,7 @@ def results(data):
 # #     plt.show()
 
 
-     return render_template('results.html', pred=pred, text_to_classify=text, graph=img_name)
+     return render_template('results.html', pred=pred, text_to_classify=text_to_classify, graph=img_name)
 
     
 
