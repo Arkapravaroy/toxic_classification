@@ -47,7 +47,7 @@ def results(data):
         fig.savefig('static/'+img_name,bbox_inches='tight',pad_inches=0.5)
         return render_template('results.html', pred=pred, text_to_classify=text_to_classify,graph=img_name)        
     else:
-        return render_template('index.html')
+        return render_template('results.html')
 
 if __name__ == '__main__':
     app.run()
