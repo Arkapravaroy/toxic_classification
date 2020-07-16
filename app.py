@@ -28,7 +28,7 @@ def results(data):
     fig.savefig('static/'+img_name,bbox_inches='tight',pad_inches=0.5)
     with open("static/"+file_name, "w") as output:
         output.write(str(pred))
-    return render_template('results.html', pred=pred, text_to_classify=text_to_classify,graph=img_name)
+    return render_template('results.html', pred=pred, text_to_classify=text_to_classify,graph=img_name,file_name=file_name)
     
 
 if __name__ == '__main__':
