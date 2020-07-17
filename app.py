@@ -36,7 +36,7 @@ def results(data):
       text=text+'\n '+i
     
 
-    with PdfPages(\file_name) as pdf:
+    with PdfPages(file_name) as pdf:
         firstPage = plt.figure(figsize=(11.69,8.27))
         firstPage.clf()
         txt = str(langs)
