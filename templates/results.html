@@ -25,7 +25,8 @@
         
         <img src="{{ url_for('static', filename=graph) }}"  width="500" height="400" style=" float:right;  padding-inline-end: 20px "/><p style="color:white; font-size: 15px; padding-left:1000px; padding-right: 20px; float:right;">click on the image to download </p></a>
 <a  href="{{ url_for('static', filename=file_name) }}" download>
-    <embed src="{{ url_for('static', filename=file_name) }}" padding-bottom= "20px"; width="750" height="400" style="position: absolute; visibility: visible; left: 250px; right:470px; top: 229px;"  /><p style="color:white; font-size: 15px;  position: absolute; visibility: visible; left: 685px; right: 410px; top:630px">click here to download the report</p></a>
+    <p style="color:white; font-size: 15px;  position: absolute; visibility: visible; left: 685px; right: 410px; top:630px">click here to download the report</p></a>
+<!-- <embed src="{{ url_for('static', filename=file_name) }}" padding-bottom= "20px"; width="750" height="400" style="position: absolute; visibility: visible; left: 250px; right:470px; top: 229px;"  /> -->
 <!-- style="position: absolute; visibility: visible; left: 350px; top: 229px "         -->
 <ul>
             {% for label in pred %}
