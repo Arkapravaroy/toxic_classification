@@ -27,7 +27,7 @@ def results(data):
     ax.bar(list_classes,scores,color=(0.5,0.5,0.5,1))
     ax.set_ylim([0,1])
     img_name="image"+ str(time.time())+".png"
-    file_name="file"+str(time.time())+".pdf"
+    file_name="multipage_rap"+str(time.time())+".pdf"
     fig.savefig('static/'+img_name,bbox_inches='tight',pad_inches=0.5)
     
     statement='Entered comment:'+' '+ text_to_classify
@@ -36,7 +36,7 @@ def results(data):
       text=text+'\n '+i
     
 
-    with PdfPages('multipage_rep.pdf') as pdf:
+    with PdfPages(file_name) as pdf:
         firstPage = plt.figure(figsize=(11.69,8.27))
         firstPage.clf()
         txt = str(text)
