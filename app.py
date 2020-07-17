@@ -36,10 +36,10 @@ def results(data):
       text=text+'\n '+i
     
 
-    with PdfPages(file_name) as pdf:
-        firstPage = plt.figure()
+    with PdfPages('multipage_rep.pdf') as pdf:
+        firstPage = plt.figure(figsize=(11.69,8.27))
         firstPage.clf()
-        txt = str(langs)
+        txt = str(text)
         firstPage.text(0.5,0.5,txt, transform=firstPage.transFigure, size=24, ha="center")
         pdf.savefig()
         plt.close()
