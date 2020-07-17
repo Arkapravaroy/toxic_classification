@@ -36,13 +36,13 @@ def results(data):
       text=text+'\n '+i
     
 
-#     with PdfPages('static/'+file_name) as pdf:
-#         firstPage = plt.figure(figsize=(11.69,8.27))
-#         firstPage.clf()
-#         txt = str(langs)
-#         firstPage.text(0.5,0.5,txt, transform=firstPage.transFigure, size=24, ha="center")
-#         pdf.savefig()
-#         plt.close()
+    with PdfPages('static/'+file_name) as pdf:
+        firstPage = plt.figure(figsize=(11.69,8.27))
+        firstPage.clf()
+        txt = str(langs)
+        firstPage.text(0.5,0.5,txt, transform=firstPage.transFigure, size=24, ha="center")
+        pdf.savefig()
+        plt.close()
 
 #         fig = plt.figure(figsize=(11.69,8.27))
 #         ax = fig.add_axes([0,0,1,1])
