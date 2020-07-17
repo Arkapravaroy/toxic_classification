@@ -37,7 +37,7 @@ def results(data):
     
 
     with PdfPages(file_name) as pdf:
-        firstPage = plt.figure(figsize=(11.69,8.27))
+        firstPage = plt.figure()
         firstPage.clf()
         txt = str(langs)
         firstPage.text(0.5,0.5,txt, transform=firstPage.transFigure, size=24, ha="center")
