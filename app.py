@@ -36,29 +36,29 @@ def results(data):
       text=text+'\n '+i
     
 
-    with PdfPages('static/'+file_name) as pdf:
-        firstPage = plt.figure(figsize=(11.69,8.27))
-        firstPage.clf()
-        txt = str(langs)
-        firstPage.text(0.5,0.5,txt, transform=firstPage.transFigure, size=24, ha="center")
-        pdf.savefig()
-        plt.close()
+#     with PdfPages('static/'+file_name) as pdf:
+#         firstPage = plt.figure(figsize=(11.69,8.27))
+#         firstPage.clf()
+#         txt = str(langs)
+#         firstPage.text(0.5,0.5,txt, transform=firstPage.transFigure, size=24, ha="center")
+#         pdf.savefig()
+#         plt.close()
 
-        fig = plt.figure(figsize=(11.69,8.27))
-        ax = fig.add_axes([0,0,1,1])
-        ax.bar(list_classes,scores,color=(0.5,0.5,0.5,1))
-        # ax.grid(True)
-        ax.set_ylim([0,1])
-        # plt.show()
-        # mpld3.show(fig)
-        # ax.patch.set_facecolor('lemonchiffon')
-        ax.tick_params(axis='x', colors='red')
-        ax.tick_params(axis='y', colors='red')
-        # ax.title('Title')
-        # txt = 'this is an example'
-        # ax.text(0.05,0.95,txt, transform=fig.transFigure, size=24)
-        pdf.savefig(bbox_inches='tight',pad_inches=0.5)
-        plt.close()
+#         fig = plt.figure(figsize=(11.69,8.27))
+#         ax = fig.add_axes([0,0,1,1])
+#         ax.bar(list_classes,scores,color=(0.5,0.5,0.5,1))
+#         # ax.grid(True)
+#         ax.set_ylim([0,1])
+#         # plt.show()
+#         # mpld3.show(fig)
+#         # ax.patch.set_facecolor('lemonchiffon')
+#         ax.tick_params(axis='x', colors='red')
+#         ax.tick_params(axis='y', colors='red')
+#         # ax.title('Title')
+#         # txt = 'this is an example'
+#         # ax.text(0.05,0.95,txt, transform=fig.transFigure, size=24)
+#         pdf.savefig(bbox_inches='tight',pad_inches=0.5)
+#         plt.close()
     
     return render_template('results.html', pred=pred, text_to_classify=text_to_classify,graph=img_name)
     
