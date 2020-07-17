@@ -60,7 +60,7 @@ def results(data):
         pdf.savefig(bbox_inches='tight',pad_inches=0.5)
         plt.close()
     
-    return render_template('results.html', pred=pred, text_to_classify=text_to_classify,graph=img_name,file_name=file_name)
+    return render_template('results.html', pred=pred, text_to_classify=text_to_classify,graph=img_name)
     
 
 if __name__ == '__main__':
